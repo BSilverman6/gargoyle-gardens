@@ -1,0 +1,12 @@
+body {
+}
+
+
+.header{
+    margin: 5px 5px;
+    text-align: center;
+    font-size: 36px;
+}
+.page {
+    background-color: gray;
+}
