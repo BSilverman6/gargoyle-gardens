@@ -1,12 +1,70 @@
-body {
+
+@font-face {
+    font-family: 'Beyond Wonderland';
+    src: url(/fonts/beyond-wonderland/BeyondWonderland.woff2) format('woff2'),
+        url(./fonts/beyond-wonderland/BeyondWonderland.woff) format('woff'),
+        url(/fonts/beyond-wonderland/Beyond\ Wonderland.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
+:root{
+    --color_primary: rgba(76, 112, 23);
+    --color_primary_op: rgba(76, 112, 23, .75);
+    --color_secondary: cornsilk;
+}
 
 .header{
-    margin: 5px 5px;
     text-align: center;
-    font-size: 36px;
+    padding: 5px 10px 0px;
+    background-color: var(--color_primary_op);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.header p{
+    font-family: "Beyond Wonderland", Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    margin: 0;
+}
+.option_bar{
+    padding: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: min(400px, 80vw);
+}
+
+.option_bar button{
+    color: var(--color_primary);
+    background-color: var(--color_secondary);
+    border-width: 2px 2px 0px;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+
+
 }
 .page {
-    background-color: gray;
+    padding: 10px min(200px,20vw);
+    flex-grow: 5;
+    height: 100px;
+}
+
+.footer {
+    background-color: var(--color_primary_op);
+    text-align: end;
+    padding: 3px 10px;
+    color: var(--color_secondary);
+}
+
+
+
+body{
+    background: url(images/hood_hill.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: min(100vh);
 }
