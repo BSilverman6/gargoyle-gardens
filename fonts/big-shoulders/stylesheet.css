@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Regular.woff2') format('woff2'),
+        url('BigShouldersDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Thin.woff2') format('woff2'),
+        url('BigShouldersDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Bold.woff2') format('woff2'),
+        url('BigShouldersDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

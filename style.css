@@ -1,18 +1,51 @@
 
 @font-face {
     font-family: 'Beyond Wonderland';
-    src: url(/fonts/beyond-wonderland/BeyondWonderland.woff2) format('woff2'),
+    src: url(./fonts/beyond-wonderland/BeyondWonderland.woff2) format('woff2'),
         url(./fonts/beyond-wonderland/BeyondWonderland.woff) format('woff'),
-        url(/fonts/beyond-wonderland/Beyond\ Wonderland.ttf) format('truetype');
+        url(./fonts/beyond-wonderland/Beyond\ Wonderland.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Shoulders';
+    src: url(./fonts/big-shoulders/BigShouldersDisplay-Regular.woff2) format('woff2'),
+        url(./fonts/big-shoulders/BigShouldersDisplay-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Thin Shoulders';
+    src: url(./fonts/big-shoulders/BigShouldersDisplay-Thin.woff2) format('woff2'),
+        url(./fonts/big-shoulders/BigShouldersDisplay-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bold Shoulders';
+    src: url(./fonts/big-shoulders/BigShouldersDisplay-Bold.woff2) format('woff2'),
+        url(./fonts/big-shoulders/BigShouldersDisplay-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 :root{
     --color_primary: rgba(76, 112, 23);
     --color_primary_op: rgba(76, 112, 23, .75);
     --color_secondary: cornsilk;
+    --color_secondary_op: rgba(255, 248, 220, 0.75);
+    --color_tertiary: rgb(59, 47, 0);
+    font-family: "Shoulders", Arial, Helvetica, sans-serif;
+
 }
 
 .header{
@@ -22,6 +55,7 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    color: var(--color_tertiary);
 }
 .header p{
     font-family: "Beyond Wonderland", Arial, Helvetica, sans-serif;
@@ -36,14 +70,25 @@
     width: min(400px, 80vw);
 }
 
-.option_bar button{
+.menu_button{
     color: var(--color_primary);
     background-color: var(--color_secondary);
     border-width: 2px 2px 0px;
     border-radius: 5px 5px 0px 0px;
+    border-color: var(--color_tertiary);
+    border-style: solid;
     text-align: center;
+    font-size: 24px;
+}
 
+.menu_button:hover{
+    color: var(--color_secondary);
+    background-color: var(--color_tertiary);
+}
 
+.menu_button.active_option_bar{
+    color: var(--color_secondary);
+    background-color: var(--color_primary);
 }
 .page {
     padding: 10px min(200px,20vw);
@@ -59,12 +104,33 @@
 }
 
 
-
 body{
     background: url(images/hood_hill.jpeg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
     height: min(100vh);
 }
+
+.page_box{
+    margin: min(20px, 20vh) min(10px, 5vw);
+    border: 5px solid var(--color_tertiary);
+    border-radius: 15px;
+    background-color: var(--color_secondary_op);
+    text-align: center;
+    font-size: 36px;
+    font-family: "Bold Shoulders", Arial, Helvetica, sans-serif;
+    color: var(--color_tertiary);
+}
+
+.page_box p{
+    text-align: justify;
+    font-size: 18px;
+    color: var(--color_primary);
+    padding: 5px;
+    font-family: "Shoulders", Arial, Helvetica, sans-serif;
+
+}
+
