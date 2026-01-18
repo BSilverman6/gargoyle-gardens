@@ -127,10 +127,14 @@ body{
 
 .page_box p{
     text-align: justify;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--color_primary);
     padding: 5px;
     font-family: "Shoulders", Arial, Helvetica, sans-serif;
 
+}
+
+.page_box .center{
+    text-align: center;
 }
 

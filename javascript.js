@@ -1,7 +1,7 @@
-let page_box = document.querySelector(".page_box");
-let page_box_title = page_box.querySelector("div");
-let page_box_p = page_box.querySelector("p");
-let main_menu = document.querySelectorAll(".menu_button")
+const page_box = document.querySelector(".page_box");
+const main_menu = document.querySelectorAll(".menu_button")
+
+set_text("home_b");
 
 
 main_menu.forEach((item)=>{
@@ -20,23 +20,19 @@ function remove_active_formatting(){
 function set_text(id){
 switch (id) {
     case "home_b":
-        page_box_title.textContent = "Home Clicked";
-        page_box_p.textContent = "Welcome to the website for Gargoyle Gardens. Coming to the Columbia River Gorge in Spring 2026! \n\n This website is under construction. Please check back for updates";
+        create_home();
         break;
     
     case "about_b":
-        page_box_title.textContent = "About Clicked";
-        page_box_p.textContent = 'Located "up the hill" from White Salmon.';
+        create_about();
         break;
 
     case "contact_b":
-        page_box_title.textContent = "Contact Clicked";
-        page_box_p.textContent = "I'll get a business email and phone soon. Not gonna put my contact info on here yet...";
+        create_contact();    
         break;
 
     case "explore_b":
-        page_box_title.textContent = "Explore Clicked";
-        page_box_p.textContent = "Magic Awaits!";
+        create_explore()
         break;
 
     default:
@@ -45,6 +41,45 @@ switch (id) {
 }
 }
 
+function create_contact(){
+    let card = document.createElement("div")
+    let email = document.createElement("p")
+    let phone = document.createElement("p");
+    card.textContent = "Contact"
+    email.textContent = "Email: Bennett@Gargoyle.Farm";
+    phone.textContent = "Phone: (509) 596-1257";
+    email.classList.add("center");
+    phone.classList.add("center");
+    page_box.replaceChildren(card,email,phone)
+}
+
+function create_home(){
+    const title = document.createElement("div");
+    const text = document.createElement("p");
+    const text2 = document.createElement("p");
+    title.textContent = "Home";
+    text.textContent = "Welcome to the website for Gargoyle Gardens. Coming to the Columbia River Gorge in Spring 2026!"
+    text2.textContent = "This website is under construction. Please check back for updates"
+    page_box.replaceChildren(title,text,text2);
+}
+
+function create_about(){
+    const title = document.createElement("div");
+    const text = document.createElement("p");
+    const text2 = document.createElement("p");
+    title.textContent = "About";
+    text.textContent = 'Located "up the hill" from White Salmon, in Snowden. Gargoyle Gardens is small market garden that employs beyond organic practices with regenerative principles. Find us near you this summer!'
+    text2.textContent =  " The Farm was founded in 2026 by Bennett Silverman. Originally from the East coast, Bennett has lived and worked in Outdoor Education and Agriculture throughout the american west for the last decade. "
+    page_box.replaceChildren(title,text,text2);
+
+}
+
+function create_explore(){
+    const title = document.createElement("div");
+    title.textContent = "Magic Awaits!";
+    page_box.replaceChildren(title);
+
+}
 /* 
 about_b.addEventListener("click", ()=> {
     let active = document.querySelector(".active_option_bar");
