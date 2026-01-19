@@ -139,3 +139,21 @@ body{
     text-align: center;
 }
 
+.duo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.duo img{
+max-width: max(240px,50%);
+height: auto;
+max-height: 400px;
+flex-shrink: 0;
+object-fit: cover;
+border: 5px solid var(--color_primary);
+margin: 5px;
+border-radius: 5px;
+}
+

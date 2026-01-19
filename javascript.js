@@ -47,7 +47,7 @@ function create_contact(){
     let phone = document.createElement("p");
     card.textContent = "Contact"
     email.textContent = "Email: Bennett@Gargoyle.Farm";
-    phone.textContent = "Phone: (509) 596-1257";
+    phone.textContent = "Phone: (___) ___ - ____";
     email.classList.add("center");
     phone.classList.add("center");
     page_box.replaceChildren(card,email,phone)
@@ -67,10 +67,16 @@ function create_about(){
     const title = document.createElement("div");
     const text = document.createElement("p");
     const text2 = document.createElement("p");
+    const container = document.createElement("div");
+    container.classList.add("duo");
+    const bennett = new Image();
+    bennett.src ="./images/bennett.jpg";
+    bennett.alt = "picture of Bennett"
     title.textContent = "About";
     text.textContent = 'Located "up the hill" from White Salmon, in Snowden. Gargoyle Gardens is small market garden that employs beyond organic practices with regenerative principles. Find us near you this summer!'
-    text2.textContent =  " The Farm was founded in 2026 by Bennett Silverman. Originally from the East coast, Bennett has lived and worked in Outdoor Education and Agriculture throughout the american west for the last decade. "
-    page_box.replaceChildren(title,text,text2);
+    text2.textContent =  " The Farm was founded in 2026 by Bennett Silverman. Originally from the East coast, Bennett has lived and worked in Outdoor Education and Agriculture throughout the american west for the last decade. When not on the farm, you can find him nerding out over board games, getting lost on a rock or a river, or mischievously hiding behind small objects. "
+    container.append(bennett,text2);
+    page_box.replaceChildren(title,text,container);
 
 }
 
