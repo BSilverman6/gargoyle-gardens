@@ -1,6 +1,9 @@
 const page_box = document.querySelector(".page_box");
 const main_menu = document.querySelectorAll(".menu_button")
 
+import bennett from "./images/bennett.jpg";
+
+
 set_text("home_b");
 
 
@@ -70,7 +73,6 @@ function create_about(){
     const container = document.createElement("div");
     container.classList.add("duo");
     const bennett = new Image();
-    bennett.src ="./images/bennett.jpg";
     bennett.alt = "picture of Bennett"
     title.textContent = "About";
     text.textContent = 'Located "up the hill" from White Salmon, in Snowden. Gargoyle Gardens is small market garden that employs beyond organic practices with regenerative principles. Find us near you this summer!'
