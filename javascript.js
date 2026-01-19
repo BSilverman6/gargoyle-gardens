@@ -1,6 +1,10 @@
 const page_box = document.querySelector(".page_box");
 const main_menu = document.querySelectorAll(".menu_button")
 
+const bennett = new Image();
+bennett.src ="images/bennett.jpg";
+bennett.alt = "picture of Bennett"
+
 set_text("home_b");
 
 
