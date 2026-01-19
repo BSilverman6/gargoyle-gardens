@@ -91,9 +91,10 @@
     background-color: var(--color_primary);
 }
 .page {
-    padding: 10px min(200px,20vw);
+    padding: 10px min(200px,5vw);
     flex-grow: 5;
-    height: 100px;
+    flex: 1;
+    height: auto;
 }
 
 .footer {
@@ -110,7 +111,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
     height: min(100vh);
 }
 
@@ -131,6 +131,7 @@ body{
     color: var(--color_primary);
     padding: 5px;
     font-family: "Shoulders", Arial, Helvetica, sans-serif;
+    flex: 1;
 
 }
 
