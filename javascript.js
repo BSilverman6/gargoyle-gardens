@@ -1,9 +1,11 @@
 const page_box = document.querySelector(".page_box");
 const main_menu = document.querySelectorAll(".menu_button")
 
+
 const bennett = new Image();
 bennett.src ="images/bennett.jpg";
-bennett.alt = "picture of Bennett"
+bennett.alt = "picture of Bennett";
+
 
 set_text("home_b");
 
@@ -73,9 +75,7 @@ function create_about(){
     const text2 = document.createElement("p");
     const container = document.createElement("div");
     container.classList.add("duo");
-    const bennett = new Image();
-    bennett.src ="images/bennett.jpg";
-    bennett.alt = "picture of Bennett"
+    
     title.textContent = "About";
     text.textContent = 'Located "up the hill" from White Salmon, in Snowden. Gargoyle Gardens is small market garden that employs beyond organic practices with regenerative principles. Find us near you this summer!'
     text2.textContent =  " The Farm was founded in 2026 by Bennett Silverman. Originally from the East coast, Bennett has lived and worked in Outdoor Education and Agriculture throughout the american west for the last decade. When not on the farm, you can find him nerding out over board games, getting lost on a rock or a river, or mischievously hiding behind small objects. "
