@@ -3,8 +3,8 @@ const main_menu = document.querySelectorAll(".menu_button")
 
 
 const bennett = new Image();
-bennett.src ="images/bennett.jpg";
-bennett.alt = "picture of Bennett";
+bennett.src ="images/bennett.JPG";
+bennett.alt = "pic o' Bennett";
 
 
 set_text("home_b");
