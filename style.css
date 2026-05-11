@@ -157,3 +157,24 @@ margin: 5px;
 border-radius: 5px;
 }
 
+.trio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trio div{
+    padding: 5px;
+    margin: 1px;
+}
+
+.trio p{
+    margin: 0px;
+    text-align: center;
+    padding: 2px;
+}
+
+.trio .list{
+    border: 2px solid var(--color_tertiary);
+    border-collapse: collapse;
+}
+
