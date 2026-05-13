@@ -73,8 +73,8 @@
 .menu_button{
     color: var(--color_primary);
     background-color: var(--color_secondary);
-    border-width: 2px 2px 0px;
-    border-radius: 5px 5px 0px 0px;
+    border-width: 2px 2px 2px;
+    border-radius: 5px 5px 5px 5px;
     border-color: var(--color_tertiary);
     border-style: solid;
     text-align: center;
@@ -144,6 +144,19 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 
+}
+
+.duo_vertical{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-height: 50vh;
+
+}
+
+.duo_vertical p {
+    flex-grow: 0;
 }
 
 .duo img{

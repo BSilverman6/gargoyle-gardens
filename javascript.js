@@ -10,6 +10,14 @@ const market = new Image();
 market.src ="images/market.jpeg";
 market.alt = "pic o' market";
 
+const gfc_logo = new Image();
+gfc_logo.src = "images/GFC.png";
+gfc_logo.alt = "GFC Logo and Link";
+
+const hands_pic = new Image();
+hands_pic.src = "images/hands.jpeg";
+hands_pic.alt = "hands and plants piture"; 
+
 
 set_text("home_b");
 
@@ -73,12 +81,14 @@ function create_contact(){
 
 function create_home(){
     const title = document.createElement("div");
-    const text = document.createElement("p");
-    const text2 = document.createElement("p");
+    const my_div = document.createElement("div");
     title.textContent = "Home";
-    text.textContent = "Welcome to the website for Gargoyle Gardens. Coming to the Columbia River Gorge in Spring 2026!"
-    text2.textContent = "This website is under construction. Please check back for updates"
-    page_box.replaceChildren(title,text,text2);
+
+    const container = document.createElement("div");
+    container.classList.add("duo");
+    container.append(my_div,hands_pic)
+    my_div.innerHTML = "<p>We're a young farm in the Columbia River Gorge, adhering to regenerative principles. You can find our produce at the local farmers markets or sign up for a CSA.</p><p>Check out the links above to learn more.</p>"
+    page_box.replaceChildren(title,container);
 }
 
 function create_about(){
@@ -111,7 +121,11 @@ function create_markets(){
     
     title.textContent = "Markets";
     text.textContent = 'Find us this summer in White Salmon, The Dalles, Vancouver, and Gorge Farmer Collective'
-    container.append(subcontainer, market);
+    
+    const link = document.createElement('a');
+    link.href = 'https://www.gorgefarmers.com/';
+    link.appendChild(gfc_logo)
+    container.append(subcontainer, link);
     page_box.replaceChildren(title,text,container);
 
 }
@@ -124,10 +138,10 @@ function create_csa(){
     container.classList.add("duo");
     
     title.textContent = "CSA";
-    text.textContent = 'Short About'
-    text2.textContent =  " The Details :) "
+    text.textContent = 'A CSA - Community Supported Agriculture - is a great way to support local farms and eat fresh, seasonal produce throughout the growing season. '
+    text2.textContent =  " The CSA runs 20 weeks from the first week of June through October, with an average cost of $35/week. Each share includes a variety of in-season produce grown at the Farm. Delivery between Snowden and downtown Hood River takes place between 3:00 and 6:00 on Mondays, or pickup is available at the White Salmon Farmers Market on Tuesdays. Late season signups are welcome! "
     container.append(bennett,text2);
-    text3.textContent = "How to Join"
+    text3.innerHTML = "If you're intersted in signing up or have more questions, send me an email at <a href='mailto:Bennett@gargoyle.farm'>Bennett@gargoyle.farm</a> for the sign up form. Please include your phone number if you'd like me to give you a call.";
     page_box.replaceChildren(title,text,container,text3);
 
 }
@@ -172,6 +186,8 @@ function dalles_dates(){
 function ws_dates(){
     const myDiv = document.createElement("div");
     const title = document.createElement("div"); title.textContent= "White Salmon, Every Tuesday"
+    
+    const boxDiv = document.createElement("div");
     const d1 = document.createElement("p"); d1.textContent= "June 2";
     const d2 = document.createElement("p"); d2.textContent= "June 9";
     const d3 = document.createElement("p"); d3.textContent= "June 16";
@@ -190,11 +206,12 @@ function ws_dates(){
     const d16 = document.createElement("p");d16.textContent= "August 15";
     const d17 = document.createElement("p");d17.textContent= "August 22";
     const d18 = document.createElement("p");d18.textContent= "August 29";
-
+    boxDiv.append(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18)
+    boxDiv.classList.add("duo_vertical")
 
 
     myDiv.classList.add("list")
-    myDiv.append(title,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18);
+    myDiv.append(title,boxDiv);
     return myDiv;
 }
 
@@ -216,4 +233,8 @@ function vancouver_dates(){
     myDiv.classList.add("list")
 
     return myDiv;
+}
+
+function csa_p(){
+    const p1 = document.createElement("p"); p1.textContent = "A CSA for Gargoyle Gardens runs for Twenty Weeks from the first week of June through the end of October"
 }
