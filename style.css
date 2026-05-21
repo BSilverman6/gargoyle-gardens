@@ -90,7 +90,7 @@
     border-color: var(--color_lgreen);
     border-style: solid;
     text-align: center;
-    font-size: clamp(3vw,14px,5vw);
+    font-size: clamp(14px,3vw,24px);
 }
 
 .menu_button:hover{

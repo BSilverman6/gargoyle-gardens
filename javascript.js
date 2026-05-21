@@ -18,6 +18,10 @@ const hands_pic = new Image();
 hands_pic.src = "images/hands.jpeg";
 hands_pic.alt = "hands and plants piture"; 
 
+const banner = new Image();
+banner.src = "images/Banner.jpg:";
+banner.alt = "Gargoyle Gardens Banner";
+
 
 set_text("home_b");
 
