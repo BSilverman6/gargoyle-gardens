@@ -87,7 +87,7 @@
     background-color: var(--color_lgreen);
     border-width: 2px 2px 2px;
     border-radius: 5px 5px 5px 5px;
-    border-color: var(--color_dgreen);
+    border-color: var(--color_lgreen);
     border-style: solid;
     text-align: center;
     font-size: 24px;
