@@ -78,8 +78,8 @@
     padding: inherit;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: min(400px, 80vw);
+    flex-wrap: nowrap;
+    /* width: min(400px, 80vw); */
 }
 
 .menu_button{
@@ -90,7 +90,7 @@
     border-color: var(--color_lgreen);
     border-style: solid;
     text-align: center;
-    font-size: 14px;
+    font-size: clamp(3vw,14px,5vw);
 }
 
 .menu_button:hover{
