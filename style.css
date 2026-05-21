@@ -57,11 +57,18 @@
     align-items: center;
     color: var(--color_tertiary);
 }
-.header p{
+/* .header p{
     font-family: "Beyond Wonderland", Arial, Helvetica, sans-serif;
     font-size: 72px;
     margin: 0;
+} */
+
+.top_banner{
+    width: 100vw;
+    max-height: 50vh;
+    object-fit: contain;
 }
+
 .option_bar{
     padding: inherit;
     display: flex;
