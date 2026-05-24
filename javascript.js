@@ -19,8 +19,12 @@ hands_pic.src = "images/hands.jpeg";
 hands_pic.alt = "hands and plants piture"; 
 
 const banner = new Image();
-banner.src = "images/Banner.jpg:";
+banner.src = "images/Banner.jpg";
 banner.alt = "Gargoyle Gardens Banner";
+
+const csa_pic = new Image();
+csa_pic.src = "images/csa.jpeg";
+csa_pic.alt = "Image of Produce growing in the field"
 
 
 set_text("home_b");
@@ -144,7 +148,7 @@ function create_csa(){
     title.textContent = "CSA";
     text.textContent = 'A CSA - Community Supported Agriculture - is a great way to support local farms and eat fresh, seasonal produce throughout the growing season. '
     text2.textContent =  " The CSA runs 20 weeks from the first week of June through October, with an average cost of $35/week. Each share includes a variety of in-season produce grown at the Farm. Delivery between Snowden and downtown Hood River takes place between 3:00 and 6:00 on Mondays, or pickup is available at the White Salmon Farmers Market on Tuesdays. Late season signups are welcome! "
-    container.append(bennett,text2);
+    container.append(csa_pic,text2);
     text3.innerHTML = "If you're intersted in signing up or have more questions, send me an email at <a href='mailto:Bennett@gargoyle.farm'>Bennett@gargoyle.farm</a> for the sign up form. Please include your phone number if you'd like me to give you a call.";
     page_box.replaceChildren(title,text,container,text3);
 

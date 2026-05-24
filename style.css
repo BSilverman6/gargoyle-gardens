@@ -172,6 +172,10 @@ body{
     flex-grow: 0;
 }
 
+.duo p{
+    min-width: 200px
+}
+
 .duo img{
 max-width: max(240px,50%);
 height: auto;
