@@ -175,6 +175,8 @@ about_b.addEventListener("click", ()=> {
 function dalles_dates(){
     const myDiv = document.createElement("div");
     const title = document.createElement("div"); title.textContent= "The Dalles, Saturdays"
+    
+    const boxDiv = document.createElement("div");
     const d1 = document.createElement("p"); d1.textContent= "June 13";
     const d2 = document.createElement("p"); d2.textContent= "June 20";
     const d3 = document.createElement("p"); d3.textContent= "June 27";
@@ -191,9 +193,11 @@ function dalles_dates(){
     const d14= document.createElement("p"); d14.textContent= "September 26";
     const d15= document.createElement("p"); d15.textContent= "October 3";
     const d16= document.createElement("p"); d16.textContent= "October 10";
+    boxDiv.append(title,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16);
+    boxDiv.classList.add("duo_vertical")
 
     myDiv.classList.add("list")
-    myDiv.append(title,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16);
+    myDiv.append(title,boxDiv);
     return myDiv;
 }
 
