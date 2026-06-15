@@ -124,11 +124,11 @@ function create_markets(){
     subcontainer.classList.add("trio");
     const subcont1 = dalles_dates();
     const subcont2 = ws_dates();
-    const subcont3 = vancouver_dates();
+    const subcont3 = hr_dates();
     subcontainer.append(subcont1,subcont2,subcont3);
     
     title.textContent = "Markets";
-    text.textContent = 'Find us this summer in White Salmon, The Dalles, Vancouver, and Gorge Farmer Collective'
+    text.textContent = 'Find us this summer in White Salmon, The Dalles, **, and Gorge Farmer Collective'
     
     const link = document.createElement('a');
     link.href = 'https://www.gorgefarmers.com/';
@@ -176,15 +176,21 @@ function dalles_dates(){
     const myDiv = document.createElement("div");
     const title = document.createElement("div"); title.textContent= "The Dalles, Saturdays"
     const d1 = document.createElement("p"); d1.textContent= "June 13";
-    const d2 = document.createElement("p"); d2.textContent= "June 27";
-    const d3 = document.createElement("p"); d3.textContent= "July 11";
-    const d4 = document.createElement("p"); d4.textContent= "July 25";
-    const d5 = document.createElement("p"); d5.textContent= "August 8";
-    const d6 = document.createElement("p"); d6.textContent= "August 29";
-    const d7 = document.createElement("p"); d7.textContent= "September 12"
-    const d8 = document.createElement("p"); d8.textContent= "September 26";
-    const d9 = document.createElement("p"); d9.textContent= "October 10";
-    const d10 = document.createElement("p");d10.textContent= "October 24";
+    const d2 = document.createElement("p"); d2.textContent= "June 20";
+    const d3 = document.createElement("p"); d3.textContent= "June 27";
+    const d4 = document.createElement("p"); d4.textContent= "July 4";
+    const d5 = document.createElement("p"); d5.textContent= "July 11";
+    const d6 = document.createElement("p"); d6.textContent= "July 18";
+    const d7 = document.createElement("p"); d7.textContent= "August 1";
+    const d8 = document.createElement("p"); d8.textContent= "August 8";
+    const d9 = document.createElement("p"); d9.textContent= "August 22";
+    const d10= document.createElement("p"); d10.textContent= "August 29";
+    const d11= document.createElement("p"); d11.textContent= "September 5"
+    const d12= document.createElement("p"); d12.textContent= "September 12"
+    const d13= document.createElement("p"); d13.textContent= "September 19"
+    const d14= document.createElement("p"); d14.textContent= "September 26";
+    const d15= document.createElement("p"); d15.textContent= "October 3";
+    const d16= document.createElement("p"); d16.textContent= "October 10";
 
     myDiv.classList.add("list")
     myDiv.append(title,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10);
@@ -223,21 +229,12 @@ function ws_dates(){
     return myDiv;
 }
 
-function vancouver_dates(){
+function hr_dates(){
     const myDiv = document.createElement("div");
-    const title = document.createElement("div"); title.textContent= "Downtown Vancouver, Sundays"
-    const d1 = document.createElement("p"); d1.textContent= "June 7";
-    const d2 = document.createElement("p"); d2.textContent= "June 21";
-    const d3 = document.createElement("p"); d3.textContent= "July 5";
-    const d4 = document.createElement("p"); d4.textContent= "July 19";
-    const d5 = document.createElement("p"); d5.textContent= "August 2";
-    const d6 = document.createElement("p"); d6.textContent= "August 23";
-    const d7 = document.createElement("p"); d7.textContent= "September 6"
-    const d8 = document.createElement("p"); d8.textContent= "September 20";
-    const d9 = document.createElement("p"); d9.textContent= "October 4";
-    const d10 = document.createElement("p");d10.textContent= "October 18";
+    const title = document.createElement("div"); title.textContent= "Downtown **, Saturday"
+    const d1 = document.createElement("p"); d1.textContent= "June 25";
 
-    myDiv.append(title,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10);
+    myDiv.append(title,d1);
     myDiv.classList.add("list")
 
     return myDiv;
