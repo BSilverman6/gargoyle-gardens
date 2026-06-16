@@ -128,7 +128,7 @@ function create_markets(){
     subcontainer.append(subcont1,subcont2,subcont3);
     
     title.textContent = "Markets";
-    text.textContent = 'Find us this summer in White Salmon, The Dalles, **, and Gorge Farmer Collective'
+    text.textContent = 'Find us this summer in White Salmon, The Dalles, Hood River, and Gorge Farmer Collective'
     
     const link = document.createElement('a');
     link.href = 'https://www.gorgefarmers.com/';
@@ -235,8 +235,8 @@ function ws_dates(){
 
 function hr_dates(){
     const myDiv = document.createElement("div");
-    const title = document.createElement("div"); title.textContent= "Downtown **, Saturday"
-    const d1 = document.createElement("p"); d1.textContent= "June 25";
+    const title = document.createElement("div"); title.textContent= "Downtown Hood River, Saturday"
+    const d1 = document.createElement("p"); d1.textContent= "July 25";
 
     myDiv.append(title,d1);
     myDiv.classList.add("list")
