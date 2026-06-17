@@ -168,8 +168,10 @@ body{
 
 }
 
-.duo_vertical p {
+.duo .duo_vertical p {
     flex-grow: 0;
+    min-width: 33vw
+
 }
 
 .duo p{
