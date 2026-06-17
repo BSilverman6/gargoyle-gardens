@@ -220,10 +220,10 @@ function ws_dates(){
     const d12 = document.createElement("p");d12.textContent= "August 18";
     const d13 = document.createElement("p");d13.textContent= "August 25";
     const d14 = document.createElement("p");d14.textContent= "September 1";
-    const d15 = document.createElement("p");d15.textContent= "August 8";
-    const d16 = document.createElement("p");d16.textContent= "August 15";
-    const d17 = document.createElement("p");d17.textContent= "August 22";
-    const d18 = document.createElement("p");d18.textContent= "August 29";
+    const d15 = document.createElement("p");d15.textContent= "September 8";
+    const d16 = document.createElement("p");d16.textContent= "September 15";
+    const d17 = document.createElement("p");d17.textContent= "September 22";
+    const d18 = document.createElement("p");d18.textContent= "September 29";
     boxDiv.append(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18)
     boxDiv.classList.add("duo_vertical")
 
