@@ -95,7 +95,7 @@ function create_home(){
     const container = document.createElement("div");
     container.classList.add("duo");
     container.append(my_div,hands_pic)
-    my_div.innerHTML = "<p>We're a young farm in the Columbia River Gorge, adhering to regenerative principles. You can find our produce at the local farmers markets or sign up for a CSA.</p><p>Check out the links above to learn more.</p><a href='https://docs.google.com/forms/d/e/1FAIpQLSe0gp4VdKGYDsvwA0KOZ0gCiZ66AiUyjL9rSVwS8VlnAxoqoA/viewform?usp=preview'> Link for 7/21 Market Boxes - See form for details!</a></p>"
+    my_div.innerHTML = "<p>We're a young farm in the Columbia River Gorge, adhering to regenerative principles. You can find our produce at the local farmers markets or sign up for a CSA.</p><p>Check out the links above to learn more.</p>"
     page_box.replaceChildren(title,container);
 }
 
