@@ -120,20 +120,20 @@ function create_markets(){
     const container = document.createElement("div");
     container.classList.add("duo");
 
-    const subcontainer = document.createElement("div")
+    /* const subcontainer = document.createElement("div")
     subcontainer.classList.add("trio");
     const subcont1 = dalles_dates();
     const subcont2 = ws_dates();
     const subcont3 = hr_dates();
-    subcontainer.append(subcont1,subcont2,subcont3);
+    subcontainer.append(subcont1,subcont2,subcont3); */
     
     title.textContent = "Markets";
-    text.textContent = 'Find us this summer in White Salmon, The Dalles, Hood River, and Gorge Farmer Collective'
+    text.textContent = "Thank you White Salmon and The Dalles for a great first season! I'll be back next summer. In the meantime, checkout Gorge Farmer Collective for any produce I may still have for sale"
     
     const link = document.createElement('a');
-    link.href = 'https://www.gorgefarmers.com/';
+    link.href = 'https://gorgefarmers.localfoodmarketplace.com/Products?producer=eae0e722-59b4-47d3-b62e-a37bb89867ae';
     link.appendChild(gfc_logo)
-    container.append(subcontainer, link);
+    container.append(/* subcontainer, */ link);
     page_box.replaceChildren(title,text,container);
 
 }
