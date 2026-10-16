@@ -116,7 +116,11 @@ function create_about(){
 
 function create_markets(){
     const title = document.createElement("div");
-    const text = document.createElement("p");
+    const text_duo = document.createElement("div")
+        const text = document.createElement("p");
+    text_duo.classList.add("duo")
+
+    text_duo.append(market,text)
     const container = document.createElement("div");
     container.classList.add("duo");
 
@@ -134,7 +138,7 @@ function create_markets(){
     link.href = 'https://gorgefarmers.localfoodmarketplace.com/Products?producer=eae0e722-59b4-47d3-b62e-a37bb89867ae';
     link.appendChild(gfc_logo)
     container.append(/* subcontainer, */ link);
-    page_box.replaceChildren(title,text,container);
+    page_box.replaceChildren(title,text_duo,container);
 
 }
 function create_csa(){
